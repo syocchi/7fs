@@ -2,7 +2,18 @@
   "saveAndRun": {
     "commands": [
       {
-        "cmd": "cargo test"
+        "cmd": "./7fs.output.sh",
+        "match": "7fs\\.output\\.sh",
+        "notMatch": ".rs"
+      },
+      {
+        "cmd": "./7fs.parse.sh",
+        "match": "7fs\\.parse\\.sh"
+      },
+      {
+        "cmd": "cargo test",
+        "notMatch": ".sh",
+        "match": ".rs",
       }
     ]
   }
